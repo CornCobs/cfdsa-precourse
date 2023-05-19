@@ -1,0 +1,11 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <img src="~/img.png" alt="Stick Man"/>
+    <h2>@Model.RandomQuote()</h2>
+    <p>Repository: <a href="@Model.Repo">@Model.Repo</a></p>
+</div>
